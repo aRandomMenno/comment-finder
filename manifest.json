@@ -1,10 +1,10 @@
 
 {
     "manifest_version": 3,
-    "name": "Comments Finder",
-    "description": "Finds comments in the current page, currently only html.",
+    "name": "Comment Finder",
+    "description": "Find comments on pages you visit, currently limited to HTML comments.",
     "homepage_url": "https://github.com/aRandomMenno/CommentFinder",
-    "version": "r0.4",
+    "version": "0.4",
     "permissions": [
         "activeTab"
     ],
@@ -16,7 +16,7 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "CommentFinder@aRandomMenno.github.io"
+            "id": "a@a.a"
         }
     },
     "icons": {

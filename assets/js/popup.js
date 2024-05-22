@@ -5,16 +5,22 @@ async function getCurrentTab() {
     return tab;
 }
 
-let noComments = document.getElementById('no-comments');
-let commentsElement = document.getElementById('comments');
+let noHTMLComments = document.getElementById('noHTMLcomments');
+let HTMLcommentsElement = document.getElementById('HTMLcomments');
+
+let noCSSComments = document.getElementById('noCSScomments');
+let CSScommentsElement = document.getElementById('CSScomments');
+
+let noJSComments = document.getElementById('noJScomments');
+let JScommentsElement = document.getElementById('JScomments');
 
 (async () => {
     let tab = await getCurrentTab();
     let comments = await browser.tabs.sendMessage(tab.id, { action: "get" });
     if (!comments) comments = [];
 
-    noComments.hidden = comments.length > 0;
-    commentsElement.innerHTML = "";
+    noHTMLComments.hidden = comments.length > 0;
+    HTMLcommentsElement.innerHTML = "";
 
     for (let comment of comments) {
         let li = document.createElement('li');

@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styless.css">
     <title>Comment Finder</title>
 </head>
 
 <body style="padding: 24px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <h1 style="color: chocolate; font-size: 32px;">&lt; Comment Finder &gt;</h1>
-    <p id="no-comments" class="noComments" style="color: #ff0000; font-size: 20px;" hidden>No comments found.</p>
-    <div id="comments" class="Comments" style="color: #ff0000; font-size: 20px;"> </div>
+
+    <h2 style="color: chartreuse; font-size: 24px;">HTML comments: </h2>
+    <p id="noHTMLcomments" style="color: #ff0000; font-size: 16px;" hidden>No HTML comments found.</p>
+    <div id="HTMLcomments" style="color: #ff0000; font-size: 16px;"> </div>
+
+    <h2 style="color: chartreuse; font-size: 24px;">CSS comments: </h2>
+    <p id="noCSScomments" style="color: #ff0000; font-size: 16px;" hidden>No CSS comments found.</p>
+    <div id="CSScomments" style="color: #ff0000; font-size: 16px;"> </div>
+
+    <h2 style="color: chartreuse; font-size: 24px;">JavaScript comments: </h2>
+    <p id="noJScomments" style="color: #ff0000; font-size: 16px;" hidden>No JavaScript comments found.</p>
+    <div id="JScomments" style="color: #ff0000; font-size: 16px;"> </div>
 </body>
 
 <script src="/assets/js/popup.js"></script>
